@@ -142,11 +142,14 @@ target_link_libraries(i2c_imu_node
  )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
-#   # myfile1
-#   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
+ install(FILES
+   launch/i2c_imu_auto.launch
+   launch/mpu_9150.launch
+   launch/mpu_9150_param.launch
+   # myfile1
+   # myfile2
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+ )
 
 #############
 ## Testing ##
